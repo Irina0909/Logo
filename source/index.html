@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Logo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body class="page__body">
+  <body class="page">
     <header class="header">
       <div class="header__container container">
         <nav class="header__nav navigation">
-          <a class="navigation__logo site-logo" href="#"></a>
+          <a class="navigation__logo site-logo" href="#">Лого</a>
           <button class="navigation__toggle navigation__toggle--opened" type="button"><span class="visually-hidden"></span>Открыть меню</button>
           <ul class="navigation__list navigation__list--open">
             <li class="navigation__item">
@@ -69,45 +69,150 @@
           </ul>
         </div>
       </section>
-      <section class="main__directions directions">
-        <div class="directions__container container">
-          <h2 class="directions__title title-h2">Направления курсов</h2>
-          <select class="directions__dropdown dropdown">
-            <option class="dropdown__option" value="direction1">Программирование</option>
-            <option class="dropdown__option"value="direction2">Маркетинг</option>
-            <option class="dropdown__option"value="direction3">Дизайн</option>
-            <option class="dropdown__option"value="direction4">Аналитика</option>
-            <option class="dropdown__option"value="direction5">Финансы</option>
-            <option class="dropdown__option"value="direction6">Управление</option>
-            <option class="dropdown__option"value="direction7">Контент-маркетинг</option>
+      <section class="course-category">
+        <div class="course-category__container container">
+          <h2 class="course-category__title title-h2">Направления курсов</h2>
+          <form class="course-category__form course-category-form" action="/submit" method="POST">
+            <label for="category-choice"><span class="visually-hidden">Выберите направление курсов</span></label>
+            <select class="course-category-form__dropdown" id="category-choice" name="course">
+            <option class="course-category-form__option" selected disabled>Выберите направление</option>
+            <option class="course-category-form__option" value="development">Программирование</option>
+            <option class="course-category-form__option" value="marketing">Маркетинг</option>
+            <option class="course-category-form__option" value="design">Дизайн</option>
+            <option class="course-category-form__option" value="analytics">Аналитика</option>
+            <option class="course-category-form__option" value="finance">Финансы</option>
+            <option class="course-category-form__option" value="management">Управление</option>
+            <option class="course-category-form__option" value="content-marketing">Контент-маркетинг</option>
           </select>
-          <ul class="directions__list">
-            <li class="directions__item">
-              <a class="directions__main-link directions__main-link--current" href="#">Программирование</a>
+          </form>
+          <div class="course-category__courses courses">
+            <ul class="courses__list">
+            <li class="courses__item">
+              <a class="courses__link courses__link--current" href="#">Программирование</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Маркетинг</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Маркетинг</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Дизайн</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Дизайн</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Аналитика</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Аналитика</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Финансы</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Финансы</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Управление</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Управление</a>
             </li>
-            <li class="directions__item">
-              <a class="directions__main-link" href="#">Контент-маркетинг</a>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Контент-маркетинг</a>
             </li>
           </ul>
-          <div class="directions__links"></div>
+
+          </div>
+          <div class="course-category__subcourses subcourses">
+            <ul class="subcourses__list">
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Все курсы по программированию</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Python-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Web-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Мобильная разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">JavaScript-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Java-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка игр</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Создание сайтов</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Системное администрирование</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">QA-тестирование</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Android-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Управление разработкой и IT</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Frontend-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка игр на Unity</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка на C#</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">PHP-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">DevOps</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">IOS-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Верстка на HTML/CSS</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка на C++</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка игр на Unreal Engine</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка на Kotlin</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Информационная безопасность</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Golang-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Разработка на Swift</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">1C-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">VR/AR-разработка</a>
+            </li>
+            <li class="subcourses__item">
+              <a class="subcourses__link" href="#">Фреймворк Lavarel</a>
+            </li>
+          </ul>
+          </div>
+          
+      </section>
+      <section class="main__schools schools">
+        <div class="schools__container container">
+          <h2 class="schools__title title-h2">Школы</h2>
+          <div class="schools__carousel carousel">
+            <button class="carousel__toggle carousel__toggle--previous" type="button"><span class="visually-hidden">Previous</span></button>
+            <button class="carousel__toggle carousel__toggle--next" type="button"><span class="visually-hidden">Next</span></button>
+          </div>
         </div>
       </section>
-
+      <section class="popular-courses">
+        <h2 class="popular-courses__title title-h2">Популярные онлайн-курсы</h2>
+      </section>
     </main>
   </body>
 </html>
