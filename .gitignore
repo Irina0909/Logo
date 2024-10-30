@@ -1,5 +1,5 @@
 node_modules
-#build
+пшеbuild
 .idea
 .DS_Store
 raw/**/*.jpg
