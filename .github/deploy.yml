@@ -3,13 +3,17 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
+    module1-task1
       - master  # или другая ветка, с которой ты делаешь пуш
+
+      - master
+      master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: module1-task1
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -22,10 +26,26 @@ jobs:
         run: npm install
 
       - name: Build the project
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+
+      - name: Build project
+ master
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+ module1-task1
           publish_dir: ./build
+
+          publish_dir: ./build_
+ master
