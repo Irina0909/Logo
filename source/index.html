@@ -33,10 +33,10 @@
           <ul class="navigation__actions">
             <li class="navigation__actions-item">
               <a class="navigation__actions-link" href="#"><span class="visually-hidden">Обновления</span></a>
+              <span class=" notification-badge"><span>3</span></span>
             </li>
               <li class="navigation__actions-item">
-              <button class="navigation__actions-button" aria-label="Искать курсы" type="button"></button>
-              <span class=" notification-badge"><span>3</span></span>
+              <button class="navigation__actions-button" aria-label="Искать курсы" type="button">Искать курсы</button>
               </li>
           </ul>
         </nav>
@@ -247,44 +247,43 @@
       <section class="main__popular-courses popular-courses">
         <div class="popular-courses__container container">
           <h2 class="popular-courses__title title-h2">Популярные онлайн-курсы</h2>
-        <form class="popular-courses__form popular-courses-form mobile-only" action="/submit" method="POST">
+        <form class="popular-courses__form courses-form mobile-only" action="/submit" method="POST">
           <label for="course-choice"><span class="visually-hidden">Выберите направление курсов</span></label>
-          <select class="popular-courses-form__dropdown" id="course-choice" name="course">
-          <option class="popular-courses-form__option" disabled>Выберите направление</option>
-          <option class="popular-courses-form__option" value="development" selected>Программирование</option>
-          <option class="popular-courses-form__option" value="marketing">Маркетинг</option>
-          <option class="popular-courses-form__option" value="design">Дизайн</option>
-          <option class="popular-courses-form__option" value="analytics">Аналитика</option>
-          <option class="popular-courses-form__option" value="finance">Финансы</option>
-          <option class="popular-courses-form__option" value="management">Управление</option>
-          <option class="popular-courses-form__option" value="content-marketing">Контент-маркетинг</option>
-          <option class="popular-courses-form__option" value="languages">Иностранные языки</option>
+          <select class="popular-courses__dropdown select-element" id="course-choice" name="course">
+          <option class="popular-courses__option form-element" value="development" selected>Программирование</option>
+          <option class="popular-courses__option form-element" value="marketing">Маркетинг</option>
+          <option class="popular-courses__option form-element" value="design">Дизайн</option>
+          <option class="popular-courses__option form-element" value="analytics">Аналитика</option>
+          <option class="popular-courses__option form-element" value="finance">Финансы</option>
+          <option class="popular-courses__option form-element" value="management">Управление</option>
+          <option class="popular-courses__option form-element" value="content-marketing">Контент-маркетинг</option>
+          <option class="popular-courses__option form-element" value="languages">Иностранные языки</option>
         </select>
         </form>
-        <ul class="popular-courses__list desktop-tablet-only">
-          <li class="popular-courses__item">
-            <a class="popular-courses__link popular-courses__link--current" href="#" role="button">Программирование</a>
+        <ul class="popular-courses__list course-list desktop-tablet-only">
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link popular-courses__link--current" href="#" role="button">Программирование</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Маркетинг</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Маркетинг</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Дизайн</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Дизайн</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Аналитика</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Аналитика</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Финансы</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Финансы</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Управление</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Управление</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Контент-маркетинг</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Контент-маркетинг</a>
           </li>
-          <li class="popular-courses__item">
-            <a class="popular-courses__link" href="#" role="button">Иностранные языки</a>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Иностранные языки</a>
           </li>
         </ul>
           <ul class="popular-courses__list">
@@ -389,7 +388,7 @@
           <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
         </li>
       </ul>
-      <a class="popular-courses__button button button--primary btn btn-primary" href="#">Посмотреть еще</a>
+      <a class="popular-courses__button button button--primary btn btn-primary" href="courses.html">Посмотреть еще</a>
     </div>
   </section>
   <section class="main__blog blog">

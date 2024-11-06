@@ -1,1 +1,542 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Logo</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="styles/styles.css"></head><body class="page"><header class="header"><div class="header__container container"><nav class="header__nav navigation"><a class="navigation__logo site-logo" href="#">Лого</a> <button class="navigation__toggle navigation__toggle--opened" type="button"><span class="visually-hidden"></span>Открыть меню</button><ul class="navigation__list navigation__list--open"><li class="navigation__item"><a class="navigation__link navigation__link--current" href="index.html">Курсы</a></li><li class="navigation__item"><a class="navigation__link" href="#">Школы</a></li><li class="navigation__item"><a class="navigation__link" href="#">Отзывы о школах</a></li><li class="navigation__item"><a class="navigation__link" href="#">Акции школ</a></li><li class="navigation__item"><a class="navigation__link" href="#">Блог</a></li></ul><ul class="navigation__actions"><li class="navigation__actions-item"><a class="navigation__actions-link" href="#"><span class="visually-hidden">Обновления</span></a></li><li class="navigation__actions-item"><button class="navigation__actions-button" aria-label="Искать курсы" type="button"></button> <span class="notification-badge"><span>3</span></span></li></ul></nav></div></header><main class="main"><section class="main__hero hero"><div class="hero__container container"><div class="hero__content"><h1 class="hero__title title-h1">Агрегатор онлайн-курсов</h1><p class="hero__subtitle">Сравниваем онлайн-курсы по digital и IT. Мы - каталог-отзовик курсов. Выбирайте курсы по отзывам, цене, продолжительности и другим критериям!</p></div></div></section><section class="main__benefits benefits"><div class="benefits__container container"><h2 class="benefits__title title-h2">Наши преимущества</h2><ul class="benefits__list"><li class="benefits__item"><h3 class="benefits__title title-h3">Большой выбор онлайн-курсов</h3><p class="benefits__subtitle">Мы аккумулируем большое количество онлайн-курсов по различным направлениям, позволяя сравнивать их, и выбирать то, что вам нравится</p></li><li class="benefits__item"><h3 class="benefits__title title-h3">Актуальная информация</h3><p class="benefits__subtitle">Мы регулярно обновляем наши базы данных, чтобы предоставлять вам только самую свежую информацию о новых курсах, старте обучения, скидках и предложениях от онлайн-школ</p></li><li class="benefits__item"><h3 class="benefits__title title-h3">Скорость поиска</h3><p class="benefits__subtitle">Агрегатор курсов создан для экономии вашего времени. Вы можете с легкостью найти подходящий курс в нашем каталоге по различным фильтрам</p></li></ul></div></section><section class="main__course-category course-category"><div class="course-category__container container"><h2 class="course-category__title title-h2">Направления курсов</h2><form class="course-category__form course-category-form mobile-only" action="/submit" method="POST"><label for="category-choice"><span class="visually-hidden">Выберите направление курсов</span></label> <select class="course-category-form__dropdown" id="category-choice" name="course"><option class="course-category-form__option" disabled="disabled">Выберите направление</option><option class="course-category-form__option" value="development" selected="selected">Программирование</option><option class="course-category-form__option" value="marketing">Маркетинг</option><option class="course-category-form__option" value="design">Дизайн</option><option class="course-category-form__option" value="analytics">Аналитика</option><option class="course-category-form__option" value="finance">Финансы</option><option class="course-category-form__option" value="management">Управление</option><option class="course-category-form__option" value="content-marketing">Контент-маркетинг</option></select></form><ul class="course-category__list desktop-tablet-only"><li class="course-category__item"><a class="course-category__link course-category__link--current" href="#" role="button">Программирование</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Маркетинг</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Дизайн</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Аналитика</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Финансы</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Управление</a></li><li class="course-category__item"><a class="course-category__link" href="#" role="button">Контент-маркетинг</a></li></ul></div><div class="course-category__subcourses subcourses"><ul class="subcourses__list"><li class="subcourses__item"><span class="subcourses__title">Все курсы по программированию</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Python-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Web-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Мобильная разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">JavaScript-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Java-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка игр</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Создание сайтов</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Системное администрирование</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">QA-тестирование</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Android-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Управление разработкой и IT</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Frontend-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка игр на Unity</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка на C#</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">PHP-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">DevOps</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">IOS-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Верстка на HTML/CSS</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка на C++</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка игр на Unreal Engine</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка на Kotlin</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Информационная безопасность</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Golang-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Разработка на Swift</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">1C-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">VR/AR-разработка</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li><li class="subcourses__item"><span class="subcourses__title">Фреймворк Lavarel</span> <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button></li></ul></div></section><section class="main__schools schools"><div class="schools__container container"><h2 class="schools__title title-h2">Школы</h2><div class="schools__carousel carousel"><div class="carousel__inner"></div><button class="carousel__toggle carousel__toggle--previous" type="button"><span class="visually-hidden">Предыдущая</span></button> <button class="carousel__toggle carousel__toggle--next" type="button"><span class="visually-hidden">Следующая</span></button><div class="carousel__indicators"><button class="carousel__indicator" type="button" aria-label="Перейти к слайду 1"></button> <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 2"></button> <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 3"></button> <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 4"></button></div></div></div></section><section class="main__popular-courses popular-courses"><div class="popular-courses__container container"><h2 class="popular-courses__title title-h2">Популярные онлайн-курсы</h2><form class="popular-courses__form popular-courses-form mobile-only" action="/submit" method="POST"><label for="course-choice"><span class="visually-hidden">Выберите направление курсов</span></label> <select class="popular-courses-form__dropdown" id="course-choice" name="course"><option class="popular-courses-form__option" disabled="disabled">Выберите направление</option><option class="popular-courses-form__option" value="development" selected="selected">Программирование</option><option class="popular-courses-form__option" value="marketing">Маркетинг</option><option class="popular-courses-form__option" value="design">Дизайн</option><option class="popular-courses-form__option" value="analytics">Аналитика</option><option class="popular-courses-form__option" value="finance">Финансы</option><option class="popular-courses-form__option" value="management">Управление</option><option class="popular-courses-form__option" value="content-marketing">Контент-маркетинг</option><option class="popular-courses-form__option" value="languages">Иностранные языки</option></select></form><ul class="popular-courses__list desktop-tablet-only"><li class="popular-courses__item"><a class="popular-courses__link popular-courses__link--current" href="#" role="button">Программирование</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Маркетинг</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Дизайн</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Аналитика</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Финансы</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Управление</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Контент-маркетинг</a></li><li class="popular-courses__item"><a class="popular-courses__link" href="#" role="button">Иностранные языки</a></li></ul><ul class="popular-courses__list"><li class="popular-courses__item"><p class="popular-courses__item-title">Профессия веб-разработчик</p><p class="popular-courses__school-name">Skillbox</p><p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p><p class="popular-courses__school-raitung">4.5</p><p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p><p class="popular-courses__school-price"><span>85000 руб</span></p><p class="popular-courses__school-sale"><span>66800 руб</span></p><p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p><p class="popular-courses__school-start">В любое время</p><ul class="popular-courses__sublist"><li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li><li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li><li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li><li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li></ul><a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a> <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a> <a class="popular-courses__item-link" href="#">Добавить к сравнению</a></li><li class="popular-courses__item"><p class="popular-courses__item-title">Профессия веб-разработчик</p><p class="popular-courses__school-name">Skillbox</p><p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p><p class="popular-courses__school-raitung">4.5</p><p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p><p class="popular-courses__school-price"><span>85000 руб</span></p><p class="popular-courses__school-sale"><span>66800 руб</span></p><p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p><p class="popular-courses__school-start">В любое время</p><ul class="popular-courses__sublist"><li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li><li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li><li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li><li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li></ul><a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a> <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a> <a class="popular-courses__item-link" href="#">Добавить к сравнению</a></li><li class="popular-courses__item"><p class="popular-courses__item-title">Профессия веб-разработчик</p><p class="popular-courses__school-name">Skillbox</p><p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p><p class="popular-courses__school-raitung">4.5</p><p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p><p class="popular-courses__school-price"><span>85000 руб</span></p><p class="popular-courses__school-sale"><span>66800 руб</span></p><p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p><p class="popular-courses__school-start">В любое время</p><ul class="popular-courses__sublist"><li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li><li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li><li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li><li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li></ul><a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a> <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a> <a class="popular-courses__item-link" href="#">Добавить к сравнению</a></li><li class="popular-courses__item"><p class="popular-courses__item-title">Профессия веб-разработчик</p><p class="popular-courses__school-name">Skillbox</p><p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p><p class="popular-courses__school-raitung">4.5</p><p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p><p class="popular-courses__school-price"><span>85000 руб</span></p><p class="popular-courses__school-sale"><span>66800 руб</span></p><p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p><p class="popular-courses__school-start">В любое время</p><ul class="popular-courses__sublist"><li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li><li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li><li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li><li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li></ul><a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a> <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a> <a class="popular-courses__item-link" href="#">Добавить к сравнению</a></li><li class="popular-courses__item"><p class="popular-courses__item-title">Профессия веб-разработчик</p><p class="popular-courses__school-name">Skillbox</p><p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p><p class="popular-courses__school-raitung">4.5</p><p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p><p class="popular-courses__school-price"><span>85000 руб</span></p><p class="popular-courses__school-sale"><span>66800 руб</span></p><p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p><p class="popular-courses__school-start">В любое время</p><ul class="popular-courses__sublist"><li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li><li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li><li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li><li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li></ul><a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a> <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a> <a class="popular-courses__item-link" href="#">Добавить к сравнению</a></li></ul><a class="popular-courses__button button button--primary btn btn-primary" href="#">Посмотреть еще</a></div></section><section class="main__blog blog"><div class="blog__container container"><h2 class="blog__title title h2">Блог</h2><ul class="blog__list"><li class="blog__item"><a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a><p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p><a class="blog__item-button button button--primary" href="#">Подробнее</a></li><li class="blog__item"><a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a><p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p><a class="blog__item-button button button--primary" href="#">Подробнее</a></li><li class="blog__item"><a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a><p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p><a class="blog__item-npmbutton button button--primary" href="#">Подробнее</a></li></ul></div></section></main><footer class="footer"><div class="footer__container container"><div class="footer__logo-container"><a class="footer__logo footer-logo" href="#">Лого</a></div><div class="footer__social social"><ul class="social__list"><li class="social-item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a> <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a> <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a> <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a> <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li></ul></div><div class="footer__menu"><span class="footer__menu-title">Категории</span> <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button><ul class="footer__menu-list"><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Программирование</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Маркетинг</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Дизайн</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Управление</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Контент-маркетинг</a></li></ul></div><div class="footer__menu"><span class="footer__menu-title">Школы</span> <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button><ul class="footer__menu-list"><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Skillbox</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Geekbrains</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Нетология</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Skillfactory</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Convertmonster></a></li></ul></div><div class="footer__menu"><span class="footer__menu-title">Отзывы о школах</span> <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button><ul class="footer__menu-list"><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Отзывы о Skillbox</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Отзывы о Geekbrains</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Отзывы о Нетология</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Отзывы о Skillfactory</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Отзывы о Convertmonster</a></li></ul></div><div class="footer__menu"><span class="footer__menu-title">Курсы</span> <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button><ul class="footer__menu-list"><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">С дипломом</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">С трудоустройством</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Платные</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Бесплатные</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Ближайшие по дате старта</a></li></ul></div><div class="footer__menu"><span class="footer__menu-title">Уровень сложности</span> <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button><ul class="footer__menu-list"><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Начальный</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Средний</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Профессиональный</a></li><li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Для детей</a></li></ul></div><div class="footer__copyright"><p class="footer__copyright-text">Пользовательское соглашение</p><p class="footer__copyright-info">© 2021. Logo. Все права защищены</p></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Logo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav navigation">
+          <a class="navigation__logo site-logo" href="#">Лого</a>
+          <button class="navigation__toggle navigation__toggle--opened" type="button"><span class="visually-hidden"></span>Открыть меню</button>
+          <ul class="navigation__list navigation__list--open">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current" href="index.html">Курсы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Школы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Отзывы о школах</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Акции школ</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Блог</a>
+            </li>
+          </ul>
+          <ul class="navigation__actions">
+            <li class="navigation__actions-item">
+              <a class="navigation__actions-link" href="#"><span class="visually-hidden">Обновления</span></a>
+              <span class="notification-badge"><span>3</span></span>
+            </li>
+              <li class="navigation__actions-item">
+              <button class="navigation__actions-button" aria-label="Искать курсы" type="button">Искать курсы</button>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__hero hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title title-h1">Агрегатор онлайн-курсов</h1>
+            <p class="hero__subtitle">Сравниваем онлайн-курсы по digital и IT. Мы - каталог-отзовик курсов. Выбирайте курсы по отзывам, цене, продолжительности и другим критериям!</p>
+          </div>
+        </div>
+      </section>
+      <section class="main__benefits benefits">
+        <div class="benefits__container container">
+          <h2 class="benefits__title title-h2">Наши преимущества</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <h3 class="benefits__title title-h3">Большой выбор онлайн-курсов</h3>
+              <p class="benefits__subtitle">Мы аккумулируем большое количество онлайн-курсов по различным направлениям, позволяя сравнивать их, и выбирать то, что вам нравится</p>
+            </li>
+            <li class="benefits__item">
+              <h3 class="benefits__title title-h3">Актуальная информация</h3>
+              <p class="benefits__subtitle">Мы регулярно обновляем наши базы данных, чтобы предоставлять вам только самую свежую информацию о новых курсах, старте обучения, скидках и предложениях от онлайн-школ</p>
+            </li>
+            <li class="benefits__item">
+              <h3 class="benefits__title title-h3">Скорость поиска</h3>
+              <p class="benefits__subtitle">Агрегатор курсов создан для экономии вашего времени. Вы можете с легкостью найти подходящий курс в нашем каталоге по различным фильтрам</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__course-category course-category">
+        <div class="course-category__container container">
+          <h2 class="course-category__title title-h2">Направления курсов</h2>
+          <form class="course-category__form course-category-form mobile-only" action="/submit" method="POST">
+            <label for="category-choice"><span class="visually-hidden">Выберите направление курсов</span></label>
+            <select class="course-category-form__dropdown" id="category-choice" name="course">
+            <option class="course-category-form__option" disabled="disabled">Выберите направление</option>
+            <option class="course-category-form__option" value="development" selected="selected">Программирование</option>
+            <option class="course-category-form__option" value="marketing">Маркетинг</option>
+            <option class="course-category-form__option" value="design">Дизайн</option>
+            <option class="course-category-form__option" value="analytics">Аналитика</option>
+            <option class="course-category-form__option" value="finance">Финансы</option>
+            <option class="course-category-form__option" value="management">Управление</option>
+            <option class="course-category-form__option" value="content-marketing">Контент-маркетинг</option>
+          </select>
+          </form>
+          <ul class="course-category__list desktop-tablet-only">
+            <li class="course-category__item">
+              <a class="course-category__link course-category__link--current" href="#" role="button">Программирование</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Маркетинг</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Дизайн</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Аналитика</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Финансы</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Управление</a>
+            </li>
+            <li class="course-category__item">
+              <a class="course-category__link" href="#" role="button">Контент-маркетинг</a>
+            </li>
+          </ul>
+        </div>
+          <div class="course-category__subcourses subcourses">
+            <ul class="subcourses__list">
+            <li class="subcourses__item">
+              <span class="subcourses__title">Все курсы по программированию</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Python-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Web-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Мобильная разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">JavaScript-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Java-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка игр</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Создание сайтов</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Системное администрирование</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">QA-тестирование</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Android-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Управление разработкой и IT</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Frontend-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка игр на Unity</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка на C#</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">PHP-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">DevOps</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">IOS-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Верстка на HTML/CSS</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка на C++</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка игр на Unreal Engine</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка на Kotlin</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Информационная безопасность</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Golang-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Разработка на Swift</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">1C-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">VR/AR-разработка</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+            <li class="subcourses__item">
+              <span class="subcourses__title">Фреймворк Lavarel</span>
+              <button class="subcourses__title-toggle visually-hidden" type="button">Открыть список ссылок</button>
+            </li>
+          </ul>
+          </div>
+      </section>
+      <section class="main__schools schools">
+        <div class="schools__container container">
+          <h2 class="schools__title title-h2">Школы</h2>
+          <div class="schools__carousel carousel">
+            <div class="carousel__inner">
+            </div>
+            <button class="carousel__toggle carousel__toggle--previous" type="button"><span class="visually-hidden">Предыдущая</span></button>
+            <button class="carousel__toggle carousel__toggle--next" type="button"><span class="visually-hidden">Следующая</span></button>
+            <div class="carousel__indicators">
+            <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 1"></button>
+            <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 2"></button>
+            <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 3"></button>
+            <button class="carousel__indicator" type="button" aria-label="Перейти к слайду 4"></button>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__popular-courses popular-courses">
+        <div class="popular-courses__container container">
+          <h2 class="popular-courses__title title-h2">Популярные онлайн-курсы</h2>
+        <form class="popular-courses__form courses-form mobile-only" action="/submit" method="POST">
+          <label for="course-choice"><span class="visually-hidden">Выберите направление курсов</span></label>
+          <select class="popular-courses__dropdown select-element" id="course-choice" name="course">
+          <option class="popular-courses__option form-element" value="development" selected="selected">Программирование</option>
+          <option class="popular-courses__option form-element" value="marketing">Маркетинг</option>
+          <option class="popular-courses__option form-element" value="design">Дизайн</option>
+          <option class="popular-courses__option form-element" value="analytics">Аналитика</option>
+          <option class="popular-courses__option form-element" value="finance">Финансы</option>
+          <option class="popular-courses__option form-element" value="management">Управление</option>
+          <option class="popular-courses__option form-element" value="content-marketing">Контент-маркетинг</option>
+          <option class="popular-courses__option form-element" value="languages">Иностранные языки</option>
+        </select>
+        </form>
+        <ul class="popular-courses__list course-list desktop-tablet-only">
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link popular-courses__link--current" href="#" role="button">Программирование</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Маркетинг</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Дизайн</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Аналитика</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Финансы</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Управление</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Контент-маркетинг</a>
+          </li>
+          <li class="popular-courses__item course-item">
+            <a class="popular-courses__link course-link" href="#" role="button">Иностранные языки</a>
+          </li>
+        </ul>
+          <ul class="popular-courses__list">
+        <li class="popular-courses__item">
+          <p class="popular-courses__item-title">Профессия веб-разработчик</p>
+          <p class="popular-courses__school-name">Skillbox</p>
+          <p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p>
+          <p class="popular-courses__school-raitung">4.5</p>
+          <p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p>
+          <p class="popular-courses__school-price"><span>85000 руб</span></p>
+          <p class="popular-courses__school-sale"><span>66800 руб</span></p>
+          <p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p>
+          <p class="popular-courses__school-start">В любое время</p>
+          <ul class="popular-courses__sublist">
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li>
+          </ul>
+          <a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a>
+          <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a>
+          <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
+        </li>
+        <li class="popular-courses__item">
+          <p class="popular-courses__item-title">Профессия веб-разработчик</p>
+          <p class="popular-courses__school-name">Skillbox</p>
+          <p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p>
+          <p class="popular-courses__school-raitung">4.5</p>
+          <p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p>
+          <p class="popular-courses__school-price"><span>85000 руб</span></p>
+          <p class="popular-courses__school-sale"><span>66800 руб</span></p>
+          <p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p>
+          <p class="popular-courses__school-start">В любое время</p>
+          <ul class="popular-courses__sublist">
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li>
+          </ul>
+          <a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a>
+          <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a>
+          <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
+        </li>
+        <li class="popular-courses__item">
+          <p class="popular-courses__item-title">Профессия веб-разработчик</p>
+          <p class="popular-courses__school-name">Skillbox</p>
+          <p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p>
+          <p class="popular-courses__school-raitung">4.5</p>
+          <p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p>
+          <p class="popular-courses__school-price"><span>85000 руб</span></p>
+          <p class="popular-courses__school-sale"><span>66800 руб</span></p>
+          <p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p>
+          <p class="popular-courses__school-start">В любое время</p>
+          <ul class="popular-courses__sublist">
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li>
+          </ul>
+          <a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a>
+          <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a>
+          <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
+        </li>
+        <li class="popular-courses__item">
+          <p class="popular-courses__item-title">Профессия веб-разработчик</p>
+          <p class="popular-courses__school-name">Skillbox</p>
+          <p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p>
+          <p class="popular-courses__school-raitung">4.5</p>
+          <p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p>
+          <p class="popular-courses__school-price"><span>85000 руб</span></p>
+          <p class="popular-courses__school-sale"><span>66800 руб</span></p>
+          <p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p>
+          <p class="popular-courses__school-start">В любое время</p>
+          <ul class="popular-courses__sublist">
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li>
+          </ul>
+          <a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a>
+          <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a>
+          <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
+        </li>
+        <li class="popular-courses__item">
+          <p class="popular-courses__item-title">Профессия веб-разработчик</p>
+          <p class="popular-courses__school-name">Skillbox</p>
+          <p class="popular-courses__school-star"><span class="visually-hidden">Звезда</span></p>
+          <p class="popular-courses__school-raitung">4.5</p>
+          <p class="popular-courses__school-review"><span>Отзывы о школе: 58</span></p>
+          <p class="popular-courses__school-price"><span>85000 руб</span></p>
+          <p class="popular-courses__school-sale"><span>66800 руб</span></p>
+          <p class="popular-courses__school-price"><span>от 4 745 руб./месяц</span></p>
+          <p class="popular-courses__school-start">В любое время</p>
+          <ul class="popular-courses__sublist">
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--shortly">3 месяца</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--beginning">Начальный</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--practicing">Стажировка</li>
+            <li class="popular-courses__sublist-item popular-courses__sublist-item--graduated">Диплом</li>
+          </ul>
+          <a class="popular-courses__item-link button" href="#" role="button">На сайт курса</a>
+          <a class="popular-courses__item-link button button--primary" href="#" role="button">Подробнее</a>
+          <a class="popular-courses__item-link" href="#">Добавить к сравнению</a>
+        </li>
+      </ul>
+      <a class="popular-courses__button button button--primary btn btn-primary" href="courses.html">Посмотреть еще</a>
+    </div>
+  </section>
+  <section class="main__blog blog">
+    <div class="blog__container container">
+      <h2 class="blog__title title h2">Блог</h2>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a>
+          <p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p>
+          <a class="blog__item-button button button--primary" href="#">Подробнее</a>
+        </li>
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a>
+            <p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p>
+            <a class="blog__item-button button button--primary" href="#">Подробнее</a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__item-link" href="#">Онлайн курсы по маркетингу</a>
+            <p class="blog__item-date">Топ-10 онлайн-курсов по интернет-маркетингу</p>
+            <a class="blog__item-npmbutton button button--primary" href="#">Подробнее</a>
+          </li>
+      </ul>
+    </div>
+  </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-container">
+          <a class="footer__logo footer-logo" href="#">Лого</a>
+        </div>
+        <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social-item">
+            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__menu-title">Категории</span>
+        <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Программирование</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Маркетинг</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Дизайн</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Управление</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Контент-маркетинг</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__menu-title">Школы</span>
+        <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Skillbox</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Geekbrains</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Нетология</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Skillfactory</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Convertmonster></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__menu-title">Отзывы о школах</span>
+        <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Отзывы о Skillbox</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Отзывы о Geekbrains</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Отзывы о Нетология</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Отзывы о Skillfactory</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Отзывы о Convertmonster</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__menu-title">Курсы</span>
+        <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">С дипломом</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">С трудоустройством</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Платные</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Бесплатные</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Ближайшие по дате старта</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <span class="footer__menu-title">Уровень сложности</span>
+        <button class="footer__menu-toggle visually-hidden" type="button">Открыть список ссылок</button>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Начальный</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Средний</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Профессиональный</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-item-link" href="#">Для детей</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Пользовательское соглашение</p>
+        <p class="footer__copyright-info">© 2021. Logo. Все права защищены</p>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

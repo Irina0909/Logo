@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Logo</title>
 </head>
-<body>
+<body class="page">
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav navigation">
+        <a class="navigation__logo site-logo" href="index.html">Лого</a>
+        <button class="navigation__toggle navigation__toggle--opened" type="button"><span class="visually-hidden"></span>Открыть меню</button>
+        <ul class="navigation__list navigation__list--open">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="index.html">Курсы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Школы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Отзывы о школах</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Акции школ</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Блог</a>
+          </li>
+        </ul>
+        <ul class="navigation__actions">
+          <li class="navigation__actions-item">
+            <a class="navigation__actions-link" href="#"><span class="visually-hidden">Обновления</span></a>
+            <span class=" notification-badge"><span>3</span></span>
+          </li>
+            <li class="navigation__actions-item">
+            <button class="navigation__actions-button" aria-label="Искать курсы" type="button">Искать курсы</button>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <header class="main__page-header page-header page-header--online-courses">
+      <div class=" page-header__container container">
+        <ul class="page-header__breadcrumbs-list">
+          <li class="page-header__breadcrumbs-item">
+            <a class="page-header__breadcrumbs-link" href="index.html">Курсы</a>
+          </li>
+          <li class="page-header__breadcrumbs-item">
+            <a class="page-header__breadcrumbs-link" href="#">Онлайн-курсы</a>
+          </li>
+        </ul>
+        <h1 class="page-header__title title-h1">Онлайн-курсы</h1>
+        <p class="page-header__subtitle">Список всех онлайн-курсов с рейтингом, отзывами и детальным описанием курса 2021 года. Для удобства поиска курса используйте фильтры, сортировку, сравнение и поиск.
+          Мы обновляем информацию о всех курсах каждую неделю.</p>
+          <section class="page-header__course-choice course-choice">
+            <h2 class="course-choice__title"><span class="visually-hidden">Выбор курсов</span></h2>
+            <form class="course-choice__form courses-form mobile-only" action="/submit" method="POST">
+              <label for="course-choice"><span class="visually-hidden">Выберите направление курсов</span></label>
+              <select class="courses-form__dropdown select-element" id="course-choice" name="course">
+              <option class="courses-form__option form-element" value="development" selected>Программирование</option>
+              <option class="courses-form__option form-element" value="marketing">Маркетинг</option>
+              <option class="courses-form__option form-element" value="design">Дизайн</option>
+              <option class="courses-form__option form-element" value="analytics">Аналитика</option>
+              <option class="courses-form__option form-element" value="finance">Финансы</option>
+              <option class="courses-form__option form-element" value="management">Управление</option>
+              <option class="courses-form__option form-element" value="content-marketing">Контент-маркетинг</option>
+              <option class="courses-form__option form-element" value="languages">Иностранные языки</option>
+            </select>
+            </form>
+            <ul class="course-choice__list course-list desktop-tablet-only">
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link course-choice__link--current" href="#" role="button">Программирование</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Маркетинг</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Дизайн</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Аналитика</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Финансы</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Управление</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Контент-маркетинг</a>
+              </li>
+              <li class="course-choice__item course-item">
+                <a class="course-choice__link course-link" href="#" role="button">Иностранные языки</a>
+              </li>
+            </ul>
+            <div class="course-choice__filter choice-filter">
+              <p class="course-choice__result">Найдено 6036 курсов</p>
+            <button class="course-choice__button" type="button">Фильтры</button>
+            <div class="course-choice__filter-menu">
+              <h3 class="course-choice__title title-h2">Фильтры</h3>
+              <button class="course-choice__toggle course-choice__toggle--opened" type="button"><span class="visually-hidden"></span>Закрыть меню</button>
+              <fieldset class="course-choice__filter-section course-choice__filter-section--price">
+                <legend class="course-choice__filter-title">Цена</legend>
+                <label class="course-choice__label"><input class="course-choice__input" type="checkbox" name="price" value="paid">Платные</label>
+                <label class="course-choice__label"><input class="course-choice__input" type="checkbox" name="price" value="free">Бесплатные</label>
+                <div class="course-choice__price-range">
+                  <label class="course-choice__range-label" for="price-range"><span class="visually-hidden">Диапазон цены:</span></label>
+                <input class="course-choice__min-range" type="range" id="price-range" name="price-range" min="0" max="20000" step="1000" value="0">
+                </div>
+                <div class="course-choice__price-values">
+                  <label class="course-choice__price-label" for="min-price"><span class="visually-hidden">Минимальная цена:</span></label>
+                <input class="course-choice__min-price" type="number" id="min-price" name="min-price" value="0" readonly>
+                <label class="course-choice__price-label" for="max-price"><span class="visually-hidden">Максимальная цена:</span></label>
+                <input class="course-choice__max-price" type="number" id="max-price" name="max-price" value="20000" readonly>
+                </div>
+              </fieldset>
+              <fieldset class="course-choice__filter-section course-choice__filter-section--school">
+                <legend class="course-choice__filter-title">Школы</legend>
+              </fieldset>
+            </div>
+            </div>
+          </section>
+      </div>
+    </header>
+  </main>
 </body>
 </html>
